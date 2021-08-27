@@ -16,6 +16,8 @@ const number1Input = document.getElementById('number-1-input');
 
 const revealButton = document.getElementById('reveal-button');
 
+const story = document.getElementById('story');
+
 // set event listeners
 revealButton.addEventListener('click', () => {
     dir1.textContent = dir1Input.value;
@@ -23,6 +25,8 @@ revealButton.addEventListener('click', () => {
     noun1.textContent = noun1Input.value;
     number1.textContent = number1Input.value;
     number2.textContent = number1Input.value;
+
+    story.style.display = 'block';
 });
     // get user input(s)
     // do any needed work with the value(s)
